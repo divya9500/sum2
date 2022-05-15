@@ -1,0 +1,14 @@
+#Date and time
+package Assessment3;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+
+public class DateAndTime {
+    public static void main(String args[]){
+        DateTimeFormatter dt= DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss");
+        LocalDateTime n=LocalDateTime.now();
+        System.out.println(dt.format(n));
+    }
+}
